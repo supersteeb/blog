@@ -21,8 +21,8 @@
       <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item active" href="index.html">Home</a>
-          <a class="blog-nav-item" href="admin.html">Admin</a>
+          <a class="blog-nav-item" href="index.html">Home</a>
+          <a class="blog-nav-item active" href="admin.html">Admin</a>
 
           <a class="blog-nav-item" href="#">About</a>
         </nav>
@@ -40,15 +40,14 @@
 
         <div class="col-sm-8 blog-main">
         	<div class="main-container">
-        		<script id="blogs-tpl" type="text/x-handlebars-template">
-        		{{#each blog}}
-        		<div class="blog-post">
-        			<h2 class="blog-post-title"><a href="#">{{title}}</a></h2>
-        			<p class="blog-post-meta">At time by an author</p>
-        			<div>{{{content}}}</div>
-        		</div>
-        		{{/each}}
-        		</script>
+          		<form class="form-signin">
+                <h2 class="form-signin-heading">Please sign in</h2>
+                  <label for="inputUsername" class="sr-only">Username</label>
+                  <input type="text" id="username" class="form-control" placeholder="Username" required="" autofocus="">
+                  <label for="inputPassword" class="sr-only">Password</label>
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+              </form>
         	</div>
 
         </div><!-- /.blog-main -->
@@ -103,7 +102,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!--compiled plugins (below) -->
     <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="js/blog.js"></script>
+    <script src="js/admin.js"></script>
     <!-- Parse.js -->
     <script src="//www.parsecdn.com/js/parse-1.4.2.min.js"></script>
     <!--Handlebars.js -->
